@@ -1,1 +1,2 @@
 NSOperation后台创建线程并执行图片图片下载任务，图片下载完成后刷新主线程。
+重写继承NSOperation，并重载里面的start等方法，手动触发KVC

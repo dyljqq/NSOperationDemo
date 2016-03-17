@@ -13,6 +13,7 @@
 		734482141C997B5C00E8ADBC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 734482121C997B5C00E8ADBC /* Main.storyboard */; };
 		734482161C997B5C00E8ADBC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 734482151C997B5C00E8ADBC /* Assets.xcassets */; };
 		734482191C997B5C00E8ADBC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 734482171C997B5C00E8ADBC /* LaunchScreen.storyboard */; };
+		7344824C1C9A98BD00E8ADBC /* JQQImageOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 7344824B1C9A98BD00E8ADBC /* JQQImageOperation.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		734482151C997B5C00E8ADBC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		734482181C997B5C00E8ADBC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7344821A1C997B5C00E8ADBC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7344824A1C9A98BD00E8ADBC /* JQQImageOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JQQImageOperation.h; sourceTree = "<group>"; };
+		7344824B1C9A98BD00E8ADBC /* JQQImageOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JQQImageOperation.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +61,7 @@
 		734482081C997B5C00E8ADBC /* NSOperationDemo */ = {
 			isa = PBXGroup;
 			children = (
+				734482491C9A98BD00E8ADBC /* class */,
 				7344820C1C997B5C00E8ADBC /* AppDelegate.h */,
 				7344820D1C997B5C00E8ADBC /* AppDelegate.m */,
 				7344820F1C997B5C00E8ADBC /* ViewController.h */,
@@ -77,6 +81,15 @@
 				7344820A1C997B5C00E8ADBC /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		734482491C9A98BD00E8ADBC /* class */ = {
+			isa = PBXGroup;
+			children = (
+				7344824A1C9A98BD00E8ADBC /* JQQImageOperation.h */,
+				7344824B1C9A98BD00E8ADBC /* JQQImageOperation.m */,
+			);
+			path = class;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -151,6 +164,7 @@
 			files = (
 				734482111C997B5C00E8ADBC /* ViewController.m in Sources */,
 				7344820E1C997B5C00E8ADBC /* AppDelegate.m in Sources */,
+				7344824C1C9A98BD00E8ADBC /* JQQImageOperation.m in Sources */,
 				7344820B1C997B5C00E8ADBC /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -298,6 +312,7 @@
 				7344821F1C997B5C00E8ADBC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

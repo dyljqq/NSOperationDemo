@@ -14,6 +14,8 @@
 		734482161C997B5C00E8ADBC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 734482151C997B5C00E8ADBC /* Assets.xcassets */; };
 		734482191C997B5C00E8ADBC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 734482171C997B5C00E8ADBC /* LaunchScreen.storyboard */; };
 		7344824C1C9A98BD00E8ADBC /* JQQImageOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 7344824B1C9A98BD00E8ADBC /* JQQImageOperation.m */; };
+		734482501C9BDDE900E8ADBC /* JQQImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 7344824F1C9BDDE900E8ADBC /* JQQImageCache.m */; };
+		734482531C9BE84400E8ADBC /* JQQWebImageDownLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 734482521C9BE84400E8ADBC /* JQQWebImageDownLoader.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +31,10 @@
 		7344821A1C997B5C00E8ADBC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7344824A1C9A98BD00E8ADBC /* JQQImageOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JQQImageOperation.h; sourceTree = "<group>"; };
 		7344824B1C9A98BD00E8ADBC /* JQQImageOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JQQImageOperation.m; sourceTree = "<group>"; };
+		7344824E1C9BDDE900E8ADBC /* JQQImageCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JQQImageCache.h; sourceTree = "<group>"; };
+		7344824F1C9BDDE900E8ADBC /* JQQImageCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JQQImageCache.m; sourceTree = "<group>"; };
+		734482511C9BE84400E8ADBC /* JQQWebImageDownLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JQQWebImageDownLoader.h; sourceTree = "<group>"; };
+		734482521C9BE84400E8ADBC /* JQQWebImageDownLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JQQWebImageDownLoader.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +94,10 @@
 			children = (
 				7344824A1C9A98BD00E8ADBC /* JQQImageOperation.h */,
 				7344824B1C9A98BD00E8ADBC /* JQQImageOperation.m */,
+				7344824E1C9BDDE900E8ADBC /* JQQImageCache.h */,
+				7344824F1C9BDDE900E8ADBC /* JQQImageCache.m */,
+				734482511C9BE84400E8ADBC /* JQQWebImageDownLoader.h */,
+				734482521C9BE84400E8ADBC /* JQQWebImageDownLoader.m */,
 			);
 			path = class;
 			sourceTree = "<group>";
@@ -164,7 +174,9 @@
 			files = (
 				734482111C997B5C00E8ADBC /* ViewController.m in Sources */,
 				7344820E1C997B5C00E8ADBC /* AppDelegate.m in Sources */,
+				734482531C9BE84400E8ADBC /* JQQWebImageDownLoader.m in Sources */,
 				7344824C1C9A98BD00E8ADBC /* JQQImageOperation.m in Sources */,
+				734482501C9BDDE900E8ADBC /* JQQImageCache.m in Sources */,
 				7344820B1C997B5C00E8ADBC /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

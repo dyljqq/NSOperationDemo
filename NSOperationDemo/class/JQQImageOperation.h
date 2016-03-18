@@ -7,9 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-
-typedef void (^JQQImageOperationProgressBlock)(CGFloat progress);
-typedef void (^JQQImageOperationDataBlock)(UIImage* image, NSError* error);
+#import "JQQImageCache.h"
+#import "JQQWebImageDownLoader.h"
 
 @interface JQQImageOperation : NSOperation
 
@@ -27,6 +26,11 @@ typedef void (^JQQImageOperationDataBlock)(UIImage* image, NSError* error);
  *  Download data block
  */
 @property (nonatomic, strong)JQQImageOperationDataBlock dataBlock;
+
+/**
+ *  DOWNLOAD FAILED BLOCK
+ */
+@property (nonatomic, strong)JQQWebImageDownLoaderFailedBlock failedBlock;
 
 /**
  *  initial with url string

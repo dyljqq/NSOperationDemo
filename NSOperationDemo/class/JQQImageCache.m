@@ -32,7 +32,7 @@ static const NSString* FULL_NAME = @"com.jqq.JQQImageCache.STORE_IMAHE";
     static dispatch_once_t once;
     static JQQImageCache* imageCache = nil;
     dispatch_once(&once, ^{
-        imageCache = [self new];
+        imageCache = [[JQQImageCache alloc] init];
     });
     return imageCache;
 }
@@ -51,9 +51,10 @@ static const NSString* FULL_NAME = @"com.jqq.JQQImageCache.STORE_IMAHE";
     //create IO serial queue
     _ioQueue = dispatch_queue_create("com.jqq.JQQImageCache", DISPATCH_QUEUE_SERIAL);
     dispatch_async(_ioQueue, ^{
-        fileManager = [NSFileManager new];
+        fileManager = [NSFileManager defaultManager];
     });
-    _diskCachePath = [FULL_NAME copy];
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    _diskCachePath = [paths firstObject];
 }
 
 - (void)storeImage:(UIImage *)image forkey:(NSString *)key{
@@ -91,7 +92,9 @@ static const NSString* FULL_NAME = @"com.jqq.JQQImageCache.STORE_IMAHE";
             
             if(data){
                 if(![fileManager fileExistsAtPath:_diskCachePath]){
-                    [fileManager createDirectoryAtPath:_diskCachePath withIntermediateDirectories:YES attributes:nil error:NULL];
+                    NSError* error = nil;
+                    [fileManager createDirectoryAtPath:_diskCachePath withIntermediateDirectories:YES attributes:nil error:&error];
+                    NSLog(@"diskCachePath:%@ res : %@", _diskCachePath, error);
                 }
                 NSString* cachePathForKey = [self cachePathForKey:key];
                 [fileManager createFileAtPath:cachePathForKey contents:data attributes:nil];
